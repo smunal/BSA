@@ -1,0 +1,45 @@
+{
+  "name" : "Apply Return Codes",
+  "description" : "Apply Return Codes Script",
+  "scriptType" : "Execute the script using the PERL interpreter, passing the host list as a parameter to the script",
+  "allowRunWithNoTarget" : false,
+  "nshScriptParams" : [ {
+    "name" : "Working Directory",
+    "description" : "Working Directory",
+    "index" : 1,
+    "flag" : "w",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "/opt/bmc/bladelogic/appserver/NSH/patch",
+    "valueRequiredAtRuntime" : true,
+    "editable" : true
+  }, {
+    "name" : "OS Name",
+    "description" : "OS Name",
+    "index" : 2,
+    "flag" : "s",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "valueRequiredAtRuntime" : true,
+    "editable" : true
+  }, {
+    "name" : "Depot Folder",
+    "description" : "Depot Folder",
+    "index" : 3,
+    "flag" : "d",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "valueRequiredAtRuntime" : true,
+    "editable" : true
+  }, {
+    "name" : "hosts",
+    "description" : "Apply Return Codes.",
+    "index" : 4,
+    "flag" : "f",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "%f",
+    "valueRequiredAtRuntime" : true,
+    "editable" : true
+  } ]
+}
