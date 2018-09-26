@@ -1,0 +1,77 @@
+{
+  "name" : "Cleanup Transaction Script",
+  "description" : "Perl script to cleanup transactions",
+  "scriptType" : "Execute the script using the PERL interpreter, passing the host list as a parameter to the script",
+  "allowRunWithNoTarget" : false,
+  "nshScriptParams" : [ {
+    "name" : "Working Directory",
+    "description" : "Patch Upgrade Working Directory",
+    "index" : 1,
+    "flag" : "w",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "/opt/bmc/bladelogic/appserver/NSH/patch",
+    "valueRequiredAtRuntime" : true,
+    "editable" : false
+  }, {
+    "name" : "hosts",
+    "description" : "Target servers to cleanup",
+    "index" : 2,
+    "flag" : "f",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "%f",
+    "valueRequiredAtRuntime" : true,
+    "editable" : false
+  }, {
+    "name" : "Batch Job Name",
+    "description" : "Name of batch job for which cleanup job is to be created",
+    "index" : 3,
+    "flag" : "b",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "JOB_NAME",
+    "valueRequiredAtRuntime" : true,
+    "editable" : false
+  }, {
+    "name" : "Job Group",
+    "description" : "Name of Job folder where Batch Job Resides",
+    "index" : 4,
+    "flag" : "g",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "<Replace this with Job Group>",
+    "valueRequiredAtRuntime" : true,
+    "editable" : false
+  }, {
+    "name" : "Depot Group",
+    "description" : "Name of Depot folder where BLpackages and Depot Software Items are created",
+    "index" : 5,
+    "flag" : "d",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "<Replace this with Depot Group>",
+    "valueRequiredAtRuntime" : true,
+    "editable" : false
+  }, {
+    "name" : "Cleanup Mode",
+    "description" : "Mode of cleanup (T/A)",
+    "index" : 6,
+    "flag" : "m",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "T",
+    "valueRequiredAtRuntime" : true,
+    "editable" : true
+  }, {
+    "name" : "Shared Payload Flag",
+    "description" : "Applicable only for AIX",
+    "index" : 7,
+    "flag" : "s",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "0",
+    "valueRequiredAtRuntime" : true,
+    "editable" : false
+  } ]
+}
