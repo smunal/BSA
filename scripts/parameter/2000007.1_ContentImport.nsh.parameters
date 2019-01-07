@@ -1,0 +1,16 @@
+{
+  "name" : "Auto Content Import",
+  "description" : "Script to import out-of-box regulatory Compliance Content",
+  "scriptType" : "Execute the script once, passing the host list as a parameter to the script",
+  "allowRunWithNoTarget" : true,
+  "nshScriptParams" : [ {
+    "name" : "hosts",
+    "index" : 1,
+    "flag" : "h",
+    "parameterFlagRequired" : false,
+    "acceptValue" : true,
+    "defaultValue" : "%h",
+    "valueRequiredAtRuntime" : false,
+    "editable" : false
+  } ]
+}
